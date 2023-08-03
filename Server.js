@@ -8,7 +8,7 @@ const cors = require("cors");
 const routes = require("./Routes/ToDoRoute.js");
 
 const app = express();
-const PORT = process.env.PORT | 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors());
